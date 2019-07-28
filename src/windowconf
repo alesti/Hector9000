@@ -146,8 +146,8 @@ MyScreenManager:
             size_hint_y: 0.02
             orientation: 'horizontal'
             Label:
-                text: 'ISO 9001'
-                font_size: 40
+                text: 'ISO 9001 - green: without alcohol'
+                font_size: 30
             Button:
                 size_hint_x: 0.1
                 text: 'Conf'
@@ -178,6 +178,12 @@ MyScreenManager:
                     text: root.buttonText[1]
                     background_color: root.buttonColor[1]
                     on_press: root.choiceDrink(1)
+#                    Image:
+#                        source: './img/vs.png'
+#                        y: self.parent.y + self.parent.height - 125
+#                        x: self.parent.x
+#                        size: 125, 125
+#                        allow_stretch: True
                 Button:
                     id: drink3
                     font_size: 20
@@ -233,7 +239,3 @@ MyScreenManager:
                     background_color: 1,0,1,1
                     id: forward
                     on_press: root.forward()
-
-
-
-
