@@ -1,7 +1,5 @@
 
-<<<<<<< HEAD
 \.DS_Store
-=======
 # Created by https://www.gitignore.io/api/pycharm+all
 
 ### PyCharm+all ###
@@ -75,7 +73,6 @@ modules.xml
 
 
 # End of https://www.gitignore.io/api/pycharm+all
->>>>>>> 1b3f5187e0c2eecb17e2f43345612554420b8e25
 
 *.pyc
 
@@ -86,5 +83,7 @@ src/log
 src/nohup\.out
 
 *.py-0
-
 *.py-1
+
+# Aleks
+venv
