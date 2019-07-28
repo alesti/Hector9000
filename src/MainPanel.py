@@ -61,10 +61,10 @@ class MainPanel(Screen):
         self.drinkOnScreen = drink_list[:8]
 
         self.fillButtons(self.drinkOnScreen)
-        self.initVent()
+        self.initValve()
 
-    def initVent(self):
-        print("Prepare vets.")
+    def initValve(self):
+        print("Prepare valves.")
         h = HectorHardware(config)
         h.light_on()
         time.sleep(1)
@@ -72,7 +72,7 @@ class MainPanel(Screen):
 
         h.pump_stop()
         for vnum in range(12):
-            print("Vent %d closing..." % (vnum,))
+            print("Valve %d closing..." % (vnum,))
             time.sleep(1)
             h.valve_close(vnum)
         h.light_off()
@@ -127,7 +127,7 @@ class MainPanel(Screen):
             Clock.schedule_once(partial(self.doGiveDrink, args[0]), .01)
 
         contentOK.bind(on_press=closeme)
-        
+
         def cancelme(button):
             popup.dismiss()
 
